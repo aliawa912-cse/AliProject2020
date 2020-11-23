@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "921792321712",
+    "firebase_url": "https://aliproject2020.firebaseio.com",
+    "project_id": "aliproject2020",
+    "storage_bucket": "aliproject2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921792321712:android:0c9b411c2b8ab7284c4375",
+        "android_client_info": {
+          "package_name": "awad.ali.aliproject2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921792321712-08lkeg0pmk866imro2tqk74t0u3ijrb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHuNIWwPOglZA5r2mXNLalsNMeOXs921w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921792321712-08lkeg0pmk866imro2tqk74t0u3ijrb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
