@@ -88,7 +88,7 @@ public class SignInActivity extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(SignInActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-                    stEmail.(task.getException().getMessage());
+                    edEmail.setError(task.getException().getMessage());
                 }
             }
         });
