@@ -24,30 +24,30 @@
             <TextView
                 android:id="@+id/edEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:hint="Email"
-                android:text="TextView" />
+                android:text="Email" />
 
             <TextView
                 android:id="@+id/edPassWord"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:hint="PassWord"
-                android:text="TextView" />
+                android:text="PassWord" />
 
             <Button
                 android:id="@+id/btnLogIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="LogIn"
-                android:text="Button" />
+                android:text="LogIn" />
 
             <Button
                 android:id="@+id/btnSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="SignUp"
-                android:text="Button" />
+                android:text="SignUp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

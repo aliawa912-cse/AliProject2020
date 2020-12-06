@@ -1,6 +1,7 @@
-package awad.ali.aliproject2020;
+package awad.ali.aliproject2020.MyUi;
 
 import androidx.appcompat.app.AppCompatActivity;
+import awad.ali.aliproject2020.R;
 
 import android.os.Bundle;
 
