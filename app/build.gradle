@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "awad.ali.aliproject2020"
-        minSdkVersion 22
+        minSdkVersion 25
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

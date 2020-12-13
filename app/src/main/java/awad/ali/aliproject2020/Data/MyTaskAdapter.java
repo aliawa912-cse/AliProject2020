@@ -70,8 +70,9 @@ public class MyTaskAdapter extends ArrayAdapter<MyTask> {
                 break;
 
 
-            return super.getView(position, convertView, parent);
+
         }
+        return v;
     }
 }
 
