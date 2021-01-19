@@ -49,7 +49,12 @@ public class GpsFragment extends Fragment {
     }
 
     public static Fragment newInstance(String gps) {
-
+        GpsFragment fragment = new GpsFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, gps);
+       // args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override

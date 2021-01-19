@@ -34,9 +34,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
         if (position == 0)
-            return CameraFragment.newInstance("Camera");
+            return CameraFragment.newInstance("Camera","Camera");
         if (position == 1)
             return GpsFragment.newInstance("Gps");
+        return  null;
 
     }
 
