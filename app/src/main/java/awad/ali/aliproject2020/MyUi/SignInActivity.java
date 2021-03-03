@@ -43,7 +43,7 @@ public class SignInActivity extends AppCompatActivity {
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //5
+                //5س
                 validateForm();
             }
 
