@@ -17,10 +17,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/ibtnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_input_add" />
+
     </ListView>
+    <Button
+    android:id="@+id/ibtnAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="MissingConstraints"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

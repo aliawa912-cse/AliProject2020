@@ -30,12 +30,7 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
         auth= FirebaseAuth.getInstance();
-        if (auth.getCurrentUser()!=null)
-        {
-            Intent i=new Intent(getBaseContext(),MainActivity.class);
-            finish();
-            startActivity(i);
-        }
+
         edEmail = findViewById(R.id.edEmail);
         edPassword = findViewById(R.id.etPassword);
         btnLogIn = findViewById(R.id.btnLogIn);
@@ -44,11 +39,18 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //5س
-                validateForm();
+                startActivity(new Intent(SignInActivity.this,MainActivity.class));
             }
-
-
         });
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //5س
+                startActivity(new Intent(SignInActivity.this,SignUpActivity.class));
+            }
+        });
+
     }
     private void validateForm() {
         String stEmail=edEmail.getText().toString();

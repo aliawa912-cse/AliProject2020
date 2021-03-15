@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class AddTaskActivity extends AppCompatActivity {
     private ImageButton btnImage;
     private Button btnUpload;
+    private Button btnTakeImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,8 @@ public class AddTaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_task);
         btnUpload=findViewById(R.id.btnUpload);
         btnImage=findViewById(R.id.btnImage);
+        btnTakeImage=findViewById(R.id.btnTakeImage);
+
 
 
     }
