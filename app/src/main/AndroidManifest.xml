@@ -14,16 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MyUi.SignInActivity">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+           </activity>
         <activity android:name=".MyUi.MakePhotoActivity">
 
         </activity>
         <activity android:name=".MyUi.SignUpActivity" />
-        <activity android:name=".MyUi.MainActivity" />
+        <activity android:name=".MyUi.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 
