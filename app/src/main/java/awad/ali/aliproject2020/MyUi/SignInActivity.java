@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,9 +15,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.Calendar;
 
 public class SignInActivity extends AppCompatActivity {
     private TextView edEmail , edPassword;
@@ -39,7 +35,8 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //5س
-                startActivity(new Intent(SignInActivity.this,MainActivity.class));
+               /// startActivity(new Intent(SignInActivity.this,MainActivity.class));
+                checkForm();
             }
         });
 
@@ -52,7 +49,7 @@ public class SignInActivity extends AppCompatActivity {
         });
 
     }
-    private void validateForm() {
+    private void checkForm() {
         String stEmail=edEmail.getText().toString();
         String stPassword=edPassword.getText().toString();
         boolean isOk=true;
@@ -62,11 +59,11 @@ public class SignInActivity extends AppCompatActivity {
             edEmail.setError("Wrong Email syntax");
         }
         MyValidations myValidations=new MyValidations();
-        if (myValidations.validatePasword(stPassword)==false)
-        {
-            isOk = false;
-            edPassword.setError("Invalid Password");
-        }
+//        if (myValidations.validatePasword(stPassword)==false)
+//        {
+//            isOk = false;
+//            edPassword.setError("Invalid Password");
+//        }
         if(isOk)
 
         {

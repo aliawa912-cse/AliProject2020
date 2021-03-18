@@ -35,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                validateForm();
             }
         });
 
@@ -71,12 +71,12 @@ public class SignUpActivity extends AppCompatActivity {
             etPassword2.setError("passwors must be the same");
         }
          MyValidations validations=new MyValidations();
-        if (validations.validatePasword(Password)==false)
-        {
-            isOk=false;
-            etPassword.setError("Invalid Password");
-
-        }
+//        if (validations.validatePasword(Password)==false)
+//        {
+//            isOk=false;
+//            etPassword.setError("Invalid Password");
+//
+//        }
         if (isOk)//isok==ture
         {
             //todo create acount and return to sign in screen/ close this screen
@@ -86,10 +86,8 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void createNewAccount(String email, String password, String firstName, String lastName, String phone) {
-        FirebaseAuth auth;
-        {
-            auth=FirebaseAuth.getInstance();
-        }
+        FirebaseAuth auth=FirebaseAuth.getInstance();
+
         OnCompleteListener<AuthResult> listener = new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -107,7 +105,7 @@ public class SignUpActivity extends AppCompatActivity {
 
             }
         };
-        auth.createUserWithEmailAndPassword(email, password).addOnCanceledListener((OnCanceledListener) listener);
+        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(listener);
     }
 
 }
